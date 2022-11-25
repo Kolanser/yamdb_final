@@ -8,9 +8,8 @@ services:
     env_file:
       - ./.env
   web:
-    build: ../api_yamdb/
-    image: kolansers/infra_actions:latest
-    # restart: always
+    image: kolansers/api_yamdb:workflows_action
+    restart: always
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/
