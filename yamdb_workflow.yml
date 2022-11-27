@@ -1,7 +1,6 @@
 name: CI/CD yamdb
 
-on:
-  push:
+on: push:
     branches: [ "master" ]
 
 jobs:
